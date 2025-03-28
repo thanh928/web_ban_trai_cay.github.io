@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trái Cây Tươi Ngon</title>
+    <link rel="stylesheet" href="./baitaplon.css">
+    <script src="./baitaplon.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Trái Cây Tươi Ngon</h1>
+            </div>
+            <ul class="menu">
+                <li><a href="#">Trang Chủ</a></li>
+                <li><a href="#">Sản Phẩm</a></li>
+                <li><a href="#">Giới Thiệu</a></li>
+                <li><a href="#">Liên Hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <h2>Trái cây tươi ngon, giao tận nhà</h2>
+        <p>Chúng tôi cung cấp các loại trái cây sạch, chất lượng, giao hàng tận nơi.</p>
+        <button>Khám Phá Ngay</button>
+    </section>
+    <section class="products">
+        <h2>Sản Phẩm Nổi Bật</h2>
+        <div class="product-list">
+            <div class="product">
+                <img src="https://ngonfruit.com/wp-content/uploads/2021/10/tao-xanh-new-zealand-4-768x590.jpg" alt="Trái cây 1">
+                <h3>Táo Xanh New Zealand</h3>
+                <p>Giá: 100.000 VNĐ/kg</p>
+                <button>Thêm vào giỏ</button>
+            </div>
+            <div class="product">
+                <img src="https://product.hstatic.net/200000423303/product/nho_xanh_khong_hat__non-gmo__-_500g_b19ad79e912744ebab047545baac117a_grande.png" alt="Trái cây 2">
+                <h3>Nho xanh không hạt (non-gmo)</h3>
+                <p>Giá: 385.000 VNĐ/kg</p>
+                <button>Thêm vào giỏ</button>
+            </div>
+            <div class="product">
+                <img src="./z6417424247970_a6ae66834b3f94a983109de2d6889ad4.jpg" alt="Trái cây 3">
+                <h3>Măng cụt kiểu thái </h3>
+                <p>Giá: 120.000 VNĐ/kg</p>
+                <button>Thêm vào giỏ</button>
+            </div>
+        </div>
+    </section>
+    <section class="add-product">
+        <h2>Thêm Sản Phẩm Mới</h2>
+        <input type="text" id="product-name" placeholder="Nhập tên sản phẩm">
+        <input type="number" id="product-price" placeholder="Nhập giá (VNĐ)">
+        <input type="text" id="product-image" placeholder="Nhập hình ảnh (link)">
+        <button onclick="addNewProduct()">Thêm Sản Phẩm</button>
+    </section>
+    
+    <section class="products">
+        <h2>Sản Phẩm Nổi Bật</h2>
+        <div class="product-list"></div>
+    </section>
+    <section class="cart">
+        <h2>Giỏ Hàng</h2>
+        <div class="cart-list"></div>
+        <div class="cart-total">
+            <p>Tổng tiền: <span id="total-price">0</span> VNĐ</p>
+            <button onclick="checkout()">Thanh Toán</button>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; TRÁI CÂY MINH THÀNH | MỌI QUYỀN ĐƯỢC BẢO VỆ </p>
+        <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">YouTube</a></li>
+        </ul>
+    </footer>
+
+</body>
+</html>
